@@ -1,0 +1,12 @@
+body {
+  background-color: coral;
+}
+
+h1 {
+  color: blue;
+  text-alignment: center;
+}
+
+p {
+  font-family: verdana;
+  font_size: 20px;
