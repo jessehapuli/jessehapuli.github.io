@@ -19,17 +19,19 @@ a:link, a:visited {
   color: white;
   padding: 14px 25px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: bold;
   display: inline-block;
   transition: width 2s;
+  animation-iteration-count: infinite;
 }
 
 a:hover, a:active {
   background-color: red;
 width: 100px
   hight:100px
-  
 }
 
-
+@keyframes example {
+  0%   {background-color: light green;  transform: rotate(-20deg);}
+  100% {background-color: #05D0EB; transform: rotate(20deg);}
 
