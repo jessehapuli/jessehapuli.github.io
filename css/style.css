@@ -21,8 +21,12 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  transition: width 2s;
 }
 
 a:hover, a:active {
   background-color: red;
+width: 100px
+  hight:100px
+  
 }
