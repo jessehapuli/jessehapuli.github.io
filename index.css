@@ -4,38 +4,25 @@ background-color:#E0E0E0;
 
 /*top navigationbar styling*/
 
-.top {
-  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 0px solid #e7e7e7;
-  background-color: #f3f3f3;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}}
-
-li {
-  float: left;
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
 
-li a {
-display: block;
-color: #666;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+.div {
+  height: 30px;
+  width: 100px;
 }
 
-li a:hover:not(.active) {
-background-color: #ddd;
+.div-1 {
+color:#009933
 }
 
-li a.active {
-color: white;
-background-color: #04AA6D;
+.div-2 {
+  color:orangered
 }
 
 /*text styling*/
@@ -94,10 +81,3 @@ footer p {
   font-size: 10px;
 }
 
-header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}
