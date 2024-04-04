@@ -14,17 +14,23 @@ header {
   justify-content: space-between;
 }
 
-.div {
+.header div {
   height: 30px;
+}
+
+.header div-1 {
+color:#009933;
+width: 100px;
+}
+
+.header .div-2 {
+  color:orangered;
   width: 100px;
 }
 
-.div-1 {
-color:#009933
-}
-
-.div-2 {
-  color:orangered
+.header .div-3 {
+  color:aqua;
+  width: 100px;
 }
 
 /*text styling*/
