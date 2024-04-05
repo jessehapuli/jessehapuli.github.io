@@ -28,8 +28,13 @@ background-color:#E0E0E0;
   text-decoration: none;
 }
 
+.active {
+  background-color:#009933;
+}
 
-
+li a:hover:not(.active) {
+  background-color: #111;
+}
 /*text styling*/
 
 p {
@@ -84,12 +89,4 @@ footer p {
   text-align: center;
   color: white;
   font-size: 10px;
-}
-
-header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
 }
