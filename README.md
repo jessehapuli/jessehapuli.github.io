@@ -2,4 +2,4 @@
 
 ## jessehapuli.github.io
 
-![luksia]("img/naamaq.PNG.png")
+![luksia](img/naamaq.PNG)
