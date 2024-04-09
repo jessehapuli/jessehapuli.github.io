@@ -39,10 +39,9 @@ li a:hover:not(.active) {
 /*hamburher menu*/
 
 .container {
-  position: absolute;
-  top: 8px;
-  right: 16px;
   z-index: 1;
+  top: 0px;
+  left: 100%;
   display: inline-block;
   cursor: pointer;
 }
