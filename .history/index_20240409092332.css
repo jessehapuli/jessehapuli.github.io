@@ -4,8 +4,7 @@ background-color:#E0E0E0;
 
 /*top navigationbar styling*/
 
-.top {
-  ul {
+.top ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -15,27 +14,53 @@ background-color:#E0E0E0;
   position: fixed;
   top: 0;
   width: 100%;
-}}
+}
 
-li {
+.top li {
   float: left;
 }
 
-li a {
-display: block;
-color: #666;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+.top li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color:#04AA6D;
 }
 
 li a:hover:not(.active) {
-background-color: #ddd;
+  background-color: #ddd;
 }
 
-li a.active {
-color: white;
-background-color: #04AA6D;
+/*hamburher menu*/
+
+.container {
+  top: 80px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 /*text styling*/
@@ -67,9 +92,6 @@ font-size: 24; font-weight: hard;
 color: tomato;
 }
 
-/*place holder for hamburga*/
-
-
 h1, h2 {
 font-family: verdana;
 }
@@ -92,12 +114,4 @@ footer p {
   text-align: center;
   color: white;
   font-size: 10px;
-}
-
-header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
 }
