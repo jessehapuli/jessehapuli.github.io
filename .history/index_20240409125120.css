@@ -74,7 +74,7 @@ li a:hover:not(.active) {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-.topnav .change a.icon {
+.topnav a.icon {
   background: black;
   display: block;
   position: absolute;
