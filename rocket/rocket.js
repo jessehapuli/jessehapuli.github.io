@@ -1,9 +1,13 @@
 var favcolor = 'bred';
-var myfavcolor = ['blue', 'red', 'green'];
+var myfavcolor = ['blue', 'black', 'green'];
 var numoffavcolors = 3;
-var hsagotfavcolor = false;
+var hsagotfavcolor = true;
 var jeobject = {
     firstname: 'Je',
-    lastname: 'object',
+    lastname: 'ss',
+    thirdname: 'e',
     favcolor: ['blue', 'red', 'green']
+    ,
+    yearsalive: '4.6bilj',
+    ismale: true,
 }
