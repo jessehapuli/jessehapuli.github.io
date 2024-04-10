@@ -69,7 +69,9 @@ body {
     transform: translate(0, -11px) rotate(45deg);
   }
   
- 
+  .change .drop {
+    
+  }
 
   .drop #mylinks {
     display: none;
