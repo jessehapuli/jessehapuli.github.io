@@ -68,18 +68,17 @@ body {
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
-  
- .drop .change {opacity: 100;}
 
-  .drop {
+  .drop .change {
     display: none;
   }
 
   .drop {
+    position: relative;
     z-index: 2;
     width: 100px;
   height: 100px;
-  background: rgb(250, 53, 53);
+  background: rgb(53, 204, 250);
   transition: width 2.5s, height 2.5s;
   left: 100%;
   top: 35%;
