@@ -1,6 +1,5 @@
 function myFunction(x) {
   x.classList.toggle("change");
-}
 
 function myFunction(y) {
   var y = document.getElementById("ge");
@@ -8,6 +7,9 @@ function myFunction(y) {
     y.style.display = "none";
   } else {
     y.style.display = "block";
-  }
-  if (x.classList.toggle("change") = toggle("ge"))
+  }}
+
+if (x.classList.toggle("change") = y); 
+
 }
+
