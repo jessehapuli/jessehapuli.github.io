@@ -4,7 +4,7 @@ body {
   
   /*top navigationbar styling*/
   
-  .topnav ul {
+  .top ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,11 +16,11 @@ body {
     width: 100%;
   }
   
-  .topnav li {
+  .top li {
     float: left;
   }
   
-  .topnav li a {
+  .top li a {
     display: block;
     color: #666;
     text-align: center;
