@@ -69,19 +69,20 @@ body {
     transform: translate(0, -11px) rotate(45deg);
   }
 
-  .drop .hidden {
-    display: none;
-  }
-
   .drop {
     position: relative;
     z-index: 2;
     width: 100px;
     height: 100px;
-    background: rgb(53, 204, 250);
+    background: rgb(53, 250, 142);
     transition: width 2.5s, height 2.5s;
     left: 1200px;
     top: 40px;
+    transition-duration: 0.4s;
+  }
+
+  .drop #myLinks {
+    display: none;
   }
 
   /*text styling*/
