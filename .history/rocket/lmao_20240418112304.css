@@ -1,9 +1,8 @@
 body {
-    background-color: rgb(140, 216, 70);
+    background-color: darkgreen;
 }
 
 .cool {
-    visibility: hidden;
     width: 100px;
     height: 100px;
     background-color: blue;
@@ -11,7 +10,5 @@ body {
 }
 
 .cool.red {
-    visibility: visible;
     background-color: red;
 }
-

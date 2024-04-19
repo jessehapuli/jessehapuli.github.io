@@ -70,8 +70,8 @@ body {
   }
 
   .cool {
-  opacity: 0;
-    transition: 1s;
+  opacity: 0%;
+    transition: visibility 1s;
   }
 
   .drop.cool {

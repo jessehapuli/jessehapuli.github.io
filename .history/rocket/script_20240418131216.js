@@ -82,4 +82,5 @@ var doCoolStuff = function () {
     } else {
     document.getElementById('cool').className = 'cool';
     }
+
 }

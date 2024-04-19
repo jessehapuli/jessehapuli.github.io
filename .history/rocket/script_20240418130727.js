@@ -80,6 +80,6 @@ var doCoolStuff = function () {
     if (currentClassName == 'cool') {
         document.getElementById('cool').className = 'cool red';
     } else {
-    document.getElementById('cool').className = 'cool';
+    document.getElementById('cool').className = 'cool red';
     }
 }

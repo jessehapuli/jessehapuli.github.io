@@ -70,20 +70,21 @@ body {
   }
 
   .cool {
-  opacity: 0;
-    transition: 1s;
+    visibility: hidden;
+    transition: visibility 1s;
   }
 
-  .drop.cool {
-    opacity: 100%;
+  .cool.drop {
+    visibility: visible;
   }
 
-  .cool {
+  .drop {
     position: relative;
     z-index: 2;
     width: 100px;
     height: 100px;
     background: rgb(53, 204, 250);
+    transition: width 2.5s, height 2.5s;
     left: 1200px;
     top: 40px;
   }

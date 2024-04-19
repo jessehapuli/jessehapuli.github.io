@@ -75,11 +75,6 @@ var car2 = {
 }
 
 var doCoolStuff = function () {
-    var currentClassName = document.getElementById('cool').className;
-
-    if (currentClassName == 'cool') {
-        document.getElementById('cool').className = 'cool red';
-    } else {
-    document.getElementById('cool').className = 'cool';
-    }
+    var currentclassname = document.getElementById('cool').className;
+    document.getElementById('cool').className = 'cool red';
 }

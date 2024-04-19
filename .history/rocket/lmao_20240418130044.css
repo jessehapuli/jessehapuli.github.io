@@ -3,7 +3,6 @@ body {
 }
 
 .cool {
-    visibility: hidden;
     width: 100px;
     height: 100px;
     background-color: blue;
@@ -11,7 +10,9 @@ body {
 }
 
 .cool.red {
-    visibility: visible;
     background-color: red;
 }
 
+.currentclassname {
+    background-color: rgb(55, 0, 255);
+}

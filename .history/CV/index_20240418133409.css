@@ -69,13 +69,13 @@ body {
     transform: translate(0, -11px) rotate(45deg);
   }
 
-  .cool {
-  opacity: 0;
-    transition: 1s;
+  .drop {
+    visibility: hidden;
+    transition: visibility 1s;
   }
 
   .drop.cool {
-    opacity: 100%;
+    visibility: visible;
   }
 
   .cool {
