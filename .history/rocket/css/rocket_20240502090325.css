@@ -1,0 +1,115 @@
+.left {
+    z-index: -1;
+    background-color: rgb(0, 183, 255);
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.right {
+    background-color: rgb(206, 172, 100);
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.img {
+    opacity: 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+a.button {
+
+}
+
+a {
+
+}
+
+.ground {
+    background-color: rgb(26, 49, 26);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.ground2 {
+    z-index: 3;
+    background-color: forestgreen;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.rocket {
+position: absolute;
+left: 50%;
+bottom: 20px;
+width: 120px;
+height: 466px;
+background: url(../../img/missile.png) no-repeat 0 0;
+background-color: silver;
+transition: bottom 10000ms;
+}
+
+body.body-state1 .rocket {
+    transition: none;
+}
+
+body.body-state2 .rocket {
+    background-image: url('../../img/');
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket {
+    background-image: url(../../img/missile.png);
+    bottom: 2000px;
+}
+
+body.body-state5 .rocket {
+    background-image: url(../../img/R.gif);
+}
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5 {
+    display: none;
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
+/*.flame {
+    opacity: 100%;
+    z-index: 5;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 200px;
+    height: 50px;
+    transition: bottom 10000ms;
+
+}
+*/
