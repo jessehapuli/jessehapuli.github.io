@@ -53,7 +53,7 @@ var changestate = function (state) {
         }, 2000);
     }
     if (state == 4) {
-        console.warn('sabaton fan')
+        console.error('sabaton fan')
     }
 
 };
