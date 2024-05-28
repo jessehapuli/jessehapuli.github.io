@@ -5,7 +5,7 @@ function myFunction(x){
   document.dispatchEvent(boll);
 }
 
-window.onload = function(z) {
+window.onload = function yi(z) {
   document.addEventListener("boll", () => {
     console.log("joo");
     z.classList.toggle("hide");

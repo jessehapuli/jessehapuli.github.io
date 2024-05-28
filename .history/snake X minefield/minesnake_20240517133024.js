@@ -4,6 +4,7 @@ var Context;
 var blocksize = 20;
 var rows = 30;
 var columns = 30;
+var mesh = 1;
 
 //sneak
 var snakeX;

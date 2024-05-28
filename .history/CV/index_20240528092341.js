@@ -6,10 +6,10 @@ function myFunction(x){
 }
 
 window.onload = function(z) {
-  document.addEventListener("boll", () => {
-    console.log("joo");
-    z.classList.toggle("hide");
-});
+  document.addEventListener("boll", function (e) {
+      console.log("joo");
+      z.classList.toggle("hide");
+    });
 }
 
 

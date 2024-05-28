@@ -4,6 +4,7 @@ var Context;
 var blocksize = 20;
 var rows = 30;
 var columns = 30;
+var mesh = 1;
 
 //sneak
 var snakeX;
@@ -18,14 +19,11 @@ var appleX;
 var appleY;
 
 //mines
-var mine1X;
-var mine1Y;
+var portal1X;
+var portal1Y;
 
-var mine2X;
-var mine2Y;
-
-var mine3X;
-var mine3Y;
+var portal2X;
+var portal2Y;
 
 //body
 var snakebody = [];
@@ -41,7 +39,7 @@ window.onload = function() {
 
     placesnake();
     placeapple();
-    placemine();
+    placeportal();
     document.addEventListener("keyup", changeDirection);
     document.addEventListener("boll", (e) => {
         snakebody.length = 4;
@@ -60,35 +58,25 @@ function update() {
     Context.fillStyle="yellow";
     Context.fillRect(appleX, appleY, blocksize-1, blocksize-1);
 
-    Context.fillStyle="blue";
-    Context.fillRect(mine1X, mine1Y, blocksize, blocksize);
+    Context.fillStyle="aqua";
+    Context.fillRect(portal1X, portal1Y, blocksize, blocksize);
 
-    Context.fillStyle="blue";
-    Context.fillRect(mine2X, mine2Y, blocksize, blocksize);
-
-    Context.fillStyle="blue";
-    Context.fillRect(mine3X, mine3Y, blocksize, blocksize);
+    Context.fillStyle="aqua";
+    Context.fillRect(portal2X, portal2Y, blocksize, blocksize);
 
     //snake eating apple function
     if (snakeX == appleX && snakeY == appleY) {
         snakebody.push([appleX, appleY])
         placeapple();
-    }
+    };
 
-    if (snakeX == mine1X && snakeY == mine1Y) {
-        gameover = true;
-        alert("hit a mine")
-    }
-
-    if (snakeX == mine2X && snakeY == mine2Y) {
-        gameover = true;
-        alert("hit a mine")
-    }
-
-    if (snakeX == mine3X && snakeY == mine3Y) {
-        gameover = true;
-        alert("hit a mine")
-    }
+    if (snakeX == portal2X && snakeY == portal2Y) {
+        snakeX = portal1X;
+        snakeY = portal1Y;
+    } else if (snakeX == portal1X && snakeY == portal1Y) {
+        snakeX = portal2X;
+        snakeY = portal2Y;
+    };
 
     for (let i = snakebody.length-1; i > 0; i--) {
         snakebody[i] = snakebody[i-1];
@@ -128,8 +116,9 @@ function update() {
         document.dispatchEvent(boll);
     }
 
-    if (snakebody.length == 295) {
+    if (snakebody.length == 296) {
         alert("you win");
+        end();
     }
 }
 
@@ -175,6 +164,14 @@ function changeDirection(e) {
     else if (e.code == "KeyC") {
         snakebody.length = 7;
     }
+
+    else if (e.code == "KeyM") {
+        setInterval(update, 1000/10);
+    }
+
+    else if (e.code == "KeyN") {
+        setInterval(update, 500/10);
+    }
 }
 
 function placeapple() {
@@ -187,22 +184,25 @@ function placesnake() {
     snakeY = Math.floor(Math.random() * rows) * blocksize;
 }
 
-function placemine() {
-    mine1X = Math.floor(Math.random() * columns) * blocksize;
-    mine1Y = Math.floor(Math.random() * rows) * blocksize;
+function placeportal() {
+    portal1X = Math.floor(Math.random() * columns) * blocksize;
+    portal1Y = Math.floor(Math.random() * rows) * blocksize;
 
-    mine2X = Math.floor(Math.random() * columns) * blocksize;
-    mine2Y = Math.floor(Math.random() * rows) * blocksize;
-
-    mine3X = Math.floor(Math.random() * columns) * blocksize;
-    mine3Y = Math.floor(Math.random() * rows) * blocksize;
+    portal2X = Math.floor(Math.random() * columns) * blocksize;
+    portal2Y = Math.floor(Math.random() * rows) * blocksize;
 }
 
 function changeText(id) {
     id.innerHTML = "Snake game";
-  }
+}
 
-  setInterval(tic, 1000/10);
-  function tic() {
-      document.getElementById("score").innerHTML = snakebody.length;
-  }
+//fixes: fix the other/lower portal not working
+
+function end () {
+    console.log("super meat boy light forest")
+}
+
+setInterval(tic, 1000/10);
+function tic() {
+    document.getElementById("score").innerHTML = snakebody.length;
+}

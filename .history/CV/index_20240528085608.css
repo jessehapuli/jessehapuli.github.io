@@ -78,7 +78,9 @@ body {
     transform: translate(0, -11px) rotate(45deg);
   }
 
-  .hide .drop {opacity: 0;}
+  .y .container {opacity: 0;}
+
+  .y .drop {opacity: 0;}
 
   .textbox {
     position:relative;

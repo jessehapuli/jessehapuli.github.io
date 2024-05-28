@@ -6,8 +6,7 @@ function myFunction(x){
 }
 
 window.onload = function(z) {
-  document.addEventListener("boll", () => {
-    console.log("joo");
+  document.addEventListener("boll", (e), (z) => {
     z.classList.toggle("hide");
 });
 }

@@ -5,10 +5,10 @@ function myFunction(x){
   document.dispatchEvent(boll);
 }
 
-window.onload = function(z) {
-  document.addEventListener("boll", () => {
-    console.log("joo");
-    z.classList.toggle("hide");
+window.onload = function() {
+  document.addEventListener("boll", (e) => {
+    x.classList.toggle("y");
+    console.log("yes");
 });
 }
 

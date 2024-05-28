@@ -1,13 +1,13 @@
 
 function myFunction(x){
-  x.classList.toggle("change");
+  classList.toggle("change");
   var boll = new CustomEvent("boll");
   document.dispatchEvent(boll);
 }
 
 window.onload = function(z) {
-  document.addEventListener("boll", () => {
-    console.log("joo");
+  document.addEventListener("boll", (e) => {
+    console.log("yes");
     z.classList.toggle("hide");
 });
 }

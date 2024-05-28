@@ -5,6 +5,7 @@ var blocksize = 20;
 var rows = 30;
 var columns = 30;
 
+
 //sneak
 var snakeX;
 var snakeY;
@@ -16,16 +17,6 @@ var velocityY = 0;
 //apple
 var appleX;
 var appleY;
-
-//mines
-var mine1X;
-var mine1Y;
-
-var mine2X;
-var mine2Y;
-
-var mine3X;
-var mine3Y;
 
 //body
 var snakebody = [];
@@ -41,7 +32,6 @@ window.onload = function() {
 
     placesnake();
     placeapple();
-    placemine();
     document.addEventListener("keyup", changeDirection);
     document.addEventListener("boll", (e) => {
         snakebody.length = 4;
@@ -60,34 +50,9 @@ function update() {
     Context.fillStyle="yellow";
     Context.fillRect(appleX, appleY, blocksize-1, blocksize-1);
 
-    Context.fillStyle="blue";
-    Context.fillRect(mine1X, mine1Y, blocksize, blocksize);
-
-    Context.fillStyle="blue";
-    Context.fillRect(mine2X, mine2Y, blocksize, blocksize);
-
-    Context.fillStyle="blue";
-    Context.fillRect(mine3X, mine3Y, blocksize, blocksize);
-
-    //snake eating apple function
-    if (snakeX == appleX && snakeY == appleY) {
+    if (snakeX  == appleX && snakeY == appleY) {
         snakebody.push([appleX, appleY])
         placeapple();
-    }
-
-    if (snakeX == mine1X && snakeY == mine1Y) {
-        gameover = true;
-        alert("hit a mine")
-    }
-
-    if (snakeX == mine2X && snakeY == mine2Y) {
-        gameover = true;
-        alert("hit a mine")
-    }
-
-    if (snakeX == mine3X && snakeY == mine3Y) {
-        gameover = true;
-        alert("hit a mine")
     }
 
     for (let i = snakebody.length-1; i > 0; i--) {
@@ -128,11 +93,10 @@ function update() {
         document.dispatchEvent(boll);
     }
 
-    if (snakebody.length == 295) {
+    if (snakebody.length == 298) {
         alert("you win");
     }
 }
-
 
 
 
@@ -187,22 +151,12 @@ function placesnake() {
     snakeY = Math.floor(Math.random() * rows) * blocksize;
 }
 
-function placemine() {
-    mine1X = Math.floor(Math.random() * columns) * blocksize;
-    mine1Y = Math.floor(Math.random() * rows) * blocksize;
-
-    mine2X = Math.floor(Math.random() * columns) * blocksize;
-    mine2Y = Math.floor(Math.random() * rows) * blocksize;
-
-    mine3X = Math.floor(Math.random() * columns) * blocksize;
-    mine3Y = Math.floor(Math.random() * rows) * blocksize;
-}
-
 function changeText(id) {
     id.innerHTML = "Snake game";
   }
 
-  setInterval(tic, 1000/10);
-  function tic() {
-      document.getElementById("score").innerHTML = snakebody.length;
-  }
+
+setInterval(tic, 1000/10);
+function tic() {
+    document.getElementById("score").innerHTML = snakebody.length;
+}
