@@ -141,12 +141,7 @@ function changeDirection(e) {
     }
 
     else if (e.code == "KeyC") {
-        for (let i = snakebody.length-1; i > 0; i--) {
-            snakebody[i] = snakebody[i-1];
-        }
-        if (snakebody.length) {
-            snakebody[0] = [snakeX, snakeY];
-        }
+        snakebody.length + 1 == snakebody.length;
     }
 
     else if (e.code == "KeyN") {

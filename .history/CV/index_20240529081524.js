@@ -1,21 +1,11 @@
-var z = document.getElementById("myDIV");
-
-
 
 function myFunction(x){
   x.classList.toggle("change");
   var boll = new CustomEvent("boll");
   document.dispatchEvent(boll);
-
 }
 
 window.onload = function cool() {
-  var z = document.getElementById("myDIV");
-  if (z.style.display === "none") {
-    z.style.display = "block";
-  } else {
-    z.style.display = "none";
-  };
   document.addEventListener("boll", () => {
       var z = document.getElementById("myDIV");
       if (z.style.display === "none") {
@@ -25,7 +15,10 @@ window.onload = function cool() {
       };
     });
 };
-//document.getElementById("favcolor"), value = document.body
+//document.body value document.getElementById("favcolor")
 
+document.addEventListener("boll", () => {
+  window.getComputedStyle(x).visibility = "visible";
+}, { once: true });
 
 

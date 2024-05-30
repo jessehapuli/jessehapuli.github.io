@@ -73,6 +73,8 @@ body {
     background: rgba(165, 165, 165, 0.342);
     left: 95%;
     top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
   
   .change .bar1 {
@@ -89,8 +91,8 @@ body {
     position:relative;
     background-color: #dfdfdf;
     overflow: hidden;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
   .pick {
@@ -100,15 +102,6 @@ body {
   }
 
   /*text styling*/
-
-  .main-headline {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-    font-family: "Times new roman", Arial;
-    word-spacing:5px;
-    line-height: 30px;
-  }
   
   p {
     text-align: center;

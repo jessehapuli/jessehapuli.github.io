@@ -74,6 +74,9 @@ body {
     left: 95%;
     top: 5%;
   }
+  .links {
+    align-items: top;
+  }
   
   .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
@@ -89,8 +92,8 @@ body {
     position:relative;
     background-color: #dfdfdf;
     overflow: hidden;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
   .pick {
@@ -100,15 +103,6 @@ body {
   }
 
   /*text styling*/
-
-  .main-headline {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-    font-family: "Times new roman", Arial;
-    word-spacing:5px;
-    line-height: 30px;
-  }
   
   p {
     text-align: center;
