@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            h1 {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: sue 0.5s infinite linear;
+    font-size: 100;
+    text-align: center;
+    }
+
+    @-webkit-keyframes sue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+    }
+
+img {
+text-align: center;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <h1>memes</h1>
+
+        <img src="../jessehapuli.github.io/img/jeg.gif" style="width:100px;height:100px;">
+        
+        <img src="../jessehapuli.github.io/img/jeg.gif" style="width:100px;height:100px;">
+        
+        <img src="../jessehapuli.github.io/img/jeg.gif" style="width:100px;height:100px;">
+
+        <input id = "colorpicker" type = "color" value="#ffffff">
+    </body>
+    <script>
+        let colorpicker = document.getElementById('colorpicker');
+
+setInterval(()=>{
+    let color = colorpicker.value;
+    document.body.style.backgroundColor = color;
+}, 200);
+    </script>
+</html>

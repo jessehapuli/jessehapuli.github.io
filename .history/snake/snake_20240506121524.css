@@ -1,0 +1,14 @@
+.snake-head {
+    width: 20px;
+    height: 20px;
+    color: aqua;
+    position: absolute;
+    z-index: 2;
+}
+
+.grid {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(185, 200, 200);
+
+}

@@ -1,0 +1,31 @@
+.snake-head {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    position: absolute;
+    z-index: 2;
+   
+}
+/*grid = canvas*/
+/*undicided if the grid/canvas counld be made with smaller parts like rows and columns*/
+.grid {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(185, 200, 200);
+    z-index: 1;
+    border: 3px solid white;
+    right: 50%;
+    left: 50%;
+    top: 0px;
+}
+
+body {
+    background-color: gray;
+}
+
+.apple {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
