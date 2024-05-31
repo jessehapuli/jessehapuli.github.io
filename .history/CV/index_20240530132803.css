@@ -1,7 +1,11 @@
-.henkilollisyys {
-  position: static;
+.henkilöllisyys {
+  position: relative;
+  right: 40%;
+  background-color: #bccfcd;
   overflow: hidden;
   z-index: -1;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 

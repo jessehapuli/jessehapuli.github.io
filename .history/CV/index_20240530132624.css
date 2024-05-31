@@ -1,14 +1,20 @@
-.henkilollisyys {
-  position: static;
+.henkilöllisyys {
+  position: relative;
+  right: 40%;
+  background-color: #bccfcd;
   overflow: hidden;
   z-index: -1;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 
   
   /*top navigationbar styling*/
 
-
+  .top {
+    z-index: 4;
+  }
   
   .top ul {
     list-style-type: none;
@@ -20,7 +26,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
   }
   
   .top li {
