@@ -186,7 +186,6 @@
   .luksia {
     position: relative;
     right: -30%;
-    height: auto;
   }
 
   .pärstä {
@@ -195,3 +194,6 @@
     height: auto;
   }
 
+  .kuva {
+    height: auto;
+  }
